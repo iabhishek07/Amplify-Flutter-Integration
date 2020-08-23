@@ -1,0 +1,21 @@
+{
+    "appName": "todo",
+    "roleName": "pinpointLambdaRole191df173",
+    "cloudformationPolicyName": "cloudformationPolicy191df173",
+    "cloudWatchPolicyName": "cloudWatchPolicy191df173",
+    "pinpointPolicyName": "pinpointPolicy191df173",
+    "authPolicyName": "pinpoint_amplify_191df173",
+    "unauthPolicyName": "pinpoint_amplify_191df173",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
